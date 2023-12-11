@@ -1,0 +1,67 @@
+*{
+  padding: 0 0;
+  margin: 0 0;
+}
+
+.weatherApp{
+  background-image: linear-gradient(rgb(0,0,0,0.75),rgb(0,0,0,0.75)) ,url(../public/sky.jpg);
+  width: 209vh;
+  height: 98vh;
+  background-position: center;
+  background-size: cover;
+}
+
+.searchCity input{
+  height: 40px;
+  width: 55vh;
+  position: absolute;
+  text-align: center;
+  left: 73vh;
+  top: 25%;
+  font-size: 20px;
+  border-radius: 25px;
+  border: 2px solid;
+  color: white;
+}
+
+.temp{
+ 
+
+  font-family: cursive;
+  position: absolute;
+  top: 45%;
+  left: 35vh;
+  color: white;
+}
+
+.tempDetail{
+  font-family: cursive;
+  position: absolute;
+  top: 45%;
+  right: 35vh;
+  font-size: 30px;
+  font-weight: 800;
+  color: white;
+
+}
+
+
+
+.img1{
+  position: absolute;
+right: 20vh;
+bottom: 320px;
+}
+.img1 img{
+ height: 400px;
+ width: 400px;
+}
+.img2{
+  position: absolute;
+left: 12vh;
+bottom: 320px;
+}
+.img2 img{
+  height: 400px;
+  width: 400px;
+ }
