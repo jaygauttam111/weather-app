@@ -86,13 +86,13 @@ bottom: 320px;
   width: 400px;
  }
 
- @media screen and (max-width:440px) { 
+ @media screen and (max-width:430px) { 
   .weatherApp{
     background-image: linear-gradient(rgb(0,0,0,0.75),rgb(0,0,0,0.75)) ,url(../public/sky.jpg);
     width: 100%; }
     .searchCity input{
       height: 30px;
-      width: 50vh;
+      width: 35vh;
       position: absolute;
       text-align: center;
       left: 12%;
@@ -108,7 +108,7 @@ bottom: 320px;
       font-family: cursive;
       position: absolute;
       top: 35%;
-      left: 39vh;
+      left: 30vh;
       color: white;
     }
    
@@ -117,8 +117,8 @@ bottom: 320px;
       font-family: cursive;
       position: absolute;
       top: 65%;
-      right: 35vh;
-      font-size: 22px;
+      right: 20vh;
+      font-size: 25px;
       font-weight: 800;
       color: white;
     
@@ -132,25 +132,25 @@ bottom: 320px;
     
     .img2{
       position: absolute;
-    left: -20px;
-    top: 25%;
+    left: -10px;
+    top: 30%;
     }
     .img2 img{
-      height: 250px;
-      width: 250px;
+      height: 300px;
+      width: 300px;
      }
      #imgWind{
       position: absolute;
       left: 200px;
-        height: 34px;
-        width: 60px;
-        top: 113px;
+        height: 42px;
+        width: 80px;
+        top: 138px;
       }
       #imgHumidity{
         position: absolute;
-        top: 53px;
+        top: 60px;
       left: 230px;
-        height: 35px;
-        width: 40px;
+        height: 47px;
+        width: 60px;
         }
  }
