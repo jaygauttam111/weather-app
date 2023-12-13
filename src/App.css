@@ -3,6 +3,11 @@
   margin: 0 0;
 }
 
+.wName{
+  color: white;
+  padding: 30px;
+  font-family: cursive;
+}
 .weatherApp{
   background-image: linear-gradient(rgb(0,0,0,0.75),rgb(0,0,0,0.75)) ,url(../public/sky.jpg);
   width: 209vh;
@@ -85,6 +90,20 @@ bottom: 320px;
   height: 400px;
   width: 400px;
  }
+ #errorRed{
+color: red;
+position: absolute;
+top: 35%;
+left: 41%;
+font-size: 20px;
+ }
+
+ #loadGif{
+position: absolute;
+top: 40%;
+left: 43%;
+ }
+
 
  @media screen and (max-width:430px) { 
   .weatherApp{
@@ -153,4 +172,24 @@ bottom: 320px;
         height: 47px;
         width: 60px;
         }
+        #errorRed{
+          color: red;
+          position: absolute;
+          top: 32%;
+          left: 26%;
+          font-size: 20px;
+           }
+          
+           #loadGif{
+          position: absolute;
+          top: 36%;
+          left: 34%;
+           }
+           .wName{
+            color: white;
+           font-family: cursive;
+           position: absolute;
+           top: 5%;
+           left: 50px;
+          }
  }

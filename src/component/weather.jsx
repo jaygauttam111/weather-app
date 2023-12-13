@@ -58,9 +58,9 @@ function convertToCelcious(temp){
 
     return <> <div className="weatherApp"> <div className="searchCity">
     <input type="text" placeholder="ENTERY YOUR CITY NAME" style={{color:"black"}}  value={cityName} onChange={(e)=>setCityName(e.target.value)} ></input></div>
-        {/* <h1 style={{color:"white",position:'absolute',left:'40%',top:'10%'}}>Weather App</h1> */}
-        { loading && <img src="../glob2.gif" style={{position:'absolute',top:'40%', left: '90vh'}}></img>}
-        {error && <p style={{color:'red',position:'absolute',top:'35%', left: '90vh'}}> ERROR : {error} </p>}
+       <h1 className="wName">seeWeather.com</h1>
+        { loading && <img src="../glob2.gif" id="loadGif" ></img>}
+        {error && <p id="errorRed" > ERROR : {error} </p>}
 
      
  {weatherData &&(<div className="temp"> <p >{convertToCelcious(weatherData?.main?.temp)}&deg;C</p> <br></br>
