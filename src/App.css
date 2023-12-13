@@ -32,8 +32,13 @@
   top: 45%;
   left: 35vh;
   color: white;
+  font-size: 80px;
 }
-
+.temp h3{
+font-size:'30px';
+ position:'absolute';
+  top:'95px'
+}
 .tempDetail{
   font-family: cursive;
   position: absolute;
@@ -44,6 +49,21 @@
   color: white;
 
 }
+
+#imgWind{
+position: absolute;
+left: 200px;
+  height: 55px;
+  width: 95px;
+  top: 160px;
+}
+#imgHumidity{
+  position: absolute;
+  top: 70px;
+left: 230px;
+  height: 70px;
+  width: 60px;
+  }
 
 
 
@@ -64,4 +84,73 @@ bottom: 320px;
 .img2 img{
   height: 400px;
   width: 400px;
+ }
+
+ @media screen and (max-width:440px) { 
+  .weatherApp{
+    background-image: linear-gradient(rgb(0,0,0,0.75),rgb(0,0,0,0.75)) ,url(../public/sky.jpg);
+    width: 100%; }
+    .searchCity input{
+      height: 30px;
+      width: 50vh;
+      position: absolute;
+      text-align: center;
+      left: 12%;
+      top: 25%;
+      font-size: 20px;
+      border-radius: 25px;
+      border: 2px solid;
+      color: white;
+    }
+    .temp{
+ 
+      font-size: 60px;
+      font-family: cursive;
+      position: absolute;
+      top: 35%;
+      left: 39vh;
+      color: white;
+    }
+   
+    
+    .tempDetail{
+      font-family: cursive;
+      position: absolute;
+      top: 65%;
+      right: 35vh;
+      font-size: 22px;
+      font-weight: 800;
+      color: white;
+    
+    }
+    
+    
+    
+    .img1{
+  display: none;
+    }
+    
+    .img2{
+      position: absolute;
+    left: -20px;
+    top: 25%;
+    }
+    .img2 img{
+      height: 250px;
+      width: 250px;
+     }
+     #imgWind{
+      position: absolute;
+      left: 200px;
+        height: 34px;
+        width: 60px;
+        top: 113px;
+      }
+      #imgHumidity{
+        position: absolute;
+        top: 53px;
+      left: 230px;
+        height: 35px;
+        width: 40px;
+        }
  }

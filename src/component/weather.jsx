@@ -14,6 +14,7 @@ const Weather=()=>{
 
 
 
+
     async function getWeatherData(){
        try {
         setLoading(true)
@@ -54,6 +55,7 @@ function convertToCelcious(temp){
 }
 
 
+
     return <> <div className="weatherApp"> <div className="searchCity">
     <input type="text" placeholder="ENTERY YOUR CITY NAME" style={{color:"black"}}  value={cityName} onChange={(e)=>setCityName(e.target.value)} ></input></div>
         {/* <h1 style={{color:"white",position:'absolute',left:'40%',top:'10%'}}>Weather App</h1> */}
@@ -61,18 +63,18 @@ function convertToCelcious(temp){
         {error && <p style={{color:'red',position:'absolute',top:'35%', left: '90vh'}}> ERROR : {error} </p>}
 
      
- {weatherData &&(<div className="temp"> <p style={{fontSize:'80px'}} >{convertToCelcious(weatherData?.main?.temp)}&deg;C</p> <br></br>
+ {weatherData &&(<div className="temp"> <p >{convertToCelcious(weatherData?.main?.temp)}&deg;C</p> <br></br>
        <h3 style={{fontSize:'30px',position:'absolute', top:'95px'}} >{weatherData.name} {weatherData?.sys?.country}</h3>
   </div>)}
 
 {weatherData && (<div className="tempDetail">
 {weatherData?.weather && (weatherData?.weather[0].description)}{" "} <br></br><br></br>
-<img src="./humidity.png" style={{  color: 'white',height:'50px',width:"50px",position:'absolute',top:'75px',left:'230px'}} ></img>
+<img src="./humidity.png" id="imgHumidity"  ></img>
 
 HUMIDITY:{weatherData?.weather && (weatherData?.main?.humidity)} <br></br> <br></br>
-<div className="wind" style={{height:'100px',width:'100px'}}>
-<img src="./wind.png" style={{  color: 'white',height:'80px',width:"80px",position:'absolute',top:'145px',left:'200px'}} ></img>
-WIND:{weatherData?.weather && (weatherData?.wind?.speed)}{" "}</div>
+
+<img src="./wind.png" id="imgWind"  ></img>
+WIND:{weatherData?.weather && (weatherData?.wind?.speed)}{" "}
 
 </div>)} 
 
